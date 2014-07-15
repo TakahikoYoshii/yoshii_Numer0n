@@ -102,8 +102,26 @@ public class Numer0nArugolismTest {
   }
 
   @Test
+  public void test_拡張機能313と121がきたら1bite() {
+    String actual = arugolism.analyze("313", "121");
+    assertThat(actual, is("0:1"));
+  }
+
+  @Test
+  public void test_拡張機能313と131がきたら2bite() {
+    String actual = arugolism.analyze("313", "131");
+    assertThat(actual, is("0:2"));
+  }
+
+  @Test
   public void test_拡張機能188と853がきたら1bite() {
     String actual = arugolism.analyze("188", "853");
+    assertThat(actual, is("0:1"));
+  }
+
+  @Test
+  public void test_拡張機能853と188がきたら1bite() {
+    String actual = arugolism.analyze("853", "188");
     assertThat(actual, is("0:1"));
   }
 
