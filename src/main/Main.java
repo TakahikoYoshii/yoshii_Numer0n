@@ -19,6 +19,6 @@ public class Main {
 
 	private static boolean checkInput(String string) {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 }
