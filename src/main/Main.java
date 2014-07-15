@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class Main {
   public static void main(String[] args) {
-    if (isBlanck(args)) {
+    if (!isBlanck(args)) {
       System.out.println("決めた数字と、予測した数字を引数に入力してください。¥n 例）123 456");
       System.exit(0);
     }
